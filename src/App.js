@@ -1,30 +1,41 @@
 import React from 'react';
 import './App.css';
-import MyGif from './my.gif';
+
 function App() {
 
-    let mynumber = Math.floor(Math.random()*10)+1;
-    if(mynumber===7){
+    return (
+        <div className="login">
+            <div className="login-screen">
+                <div className="app-title">
+                    <h1>Login</h1>
+                </div>
+                <div className="login-form">
+                   <div className="group-control">
+                       <input type="text" className="login-field" placeholder="username"/>
+                   </div>
 
-        return(
-            <div>
-                <h1>React Conditional Rendering</h1>
-                <h4>Number:{mynumber}</h4>
-                <img id='gif' src={MyGif} alt="MY Gif" />
+                   <div className="group-control">
+                       <input type="text" className="login-field" placeholder="password"/>
+                   </div>
+
+                   <div className="group-control">
+                       <input type="submit" className="login-btn" value="login"/>
+                   </div>
+                   
+                </div>
             </div>
-        )
+            
 
 
-    }else{
-        return(
-            <div>
-                <h1>React Conditional Rendering</h1>
-                <h4>Number:{mynumber}</h4>
-            </div>
-        )
-    }
 
 
+
+
+        </div>
+        
+
+      
+  );
 }
 
 export default App;

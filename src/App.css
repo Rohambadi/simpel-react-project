@@ -1,5 +1,61 @@
-#gif {
-  width: 480px;
-  height: 480px;
-  margin: 30px;
+body {
+  background-color: #3498db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.login-screen {
+  background-color: white;
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.app-title {
+  font-family: Arial;
+  text-align: center;
+  color: #777777;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.group-control {
+  margin-bottom: 10px;
+}
+
+.login-field {
+  width: 250px;
+  height: 50px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.login-field:focus {
+  outline: 1px solid #3498db;
+}
+.login-btn {
+  width: 250px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+  border: none;
 }
